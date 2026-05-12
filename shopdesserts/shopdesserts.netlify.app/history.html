@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History - Dessert Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fcf8f7;
+            font-family: 'Red Hat Text', sans-serif;
+            padding: 20px;
+        }
+
+        .history-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .header-history {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-home {
+            text-decoration: none;
+            color: #c73a0f;
+            font-weight: bold;
+            border: 1px solid #c73a0f;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-home:hover {
+            background: #c73a0f;
+            color: white;
+        }
+
+        .order-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .order-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #f1eaea;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .order-id {
+            font-weight: bold;
+            color: #260f08;
+        }
+
+        .order-date {
+            color: #87635a;
+            font-size: 0.9em;
+        }
+
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .item-info {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .item-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 2px dashed #f1eaea;
+        }
+
+        .empty-history {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .empty-history img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="history-container">
+        <div class="header-history">
+            <h1>Lịch sử đơn hàng</h1>
+            <a href="index.html" class="btn-home">Quay lại Shop</a>
+        </div>
+
+        <div id="history-list">
+        </div>
+    </div>
+    <script type="module" src="history.js"></script>
+</body>
+
+</html>

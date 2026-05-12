@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .auth-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .auth-container h2 {
+            color: #260f08;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .auth-form input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ad8985;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        .auth-form button {
+            width: 100%;
+            background: #c73a0f;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .toggle-link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #87635a;
+            cursor: pointer;
+        }
+
+        .toggle-link b {
+            color: #c73a0f;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: #fcf8f7;">
+
+    <div class="auth-container">
+        <div id="login-form">
+            <h2>Login</h2>
+            <div class="auth-form">
+                <input type="text" id="login-user" placeholder="Username">
+                <input type="password" id="login-pass" placeholder="Password">
+                <button onclick="handleLogin()">Login</button>
+            </div>
+            <p class="toggle-link" onclick="toggleAuth()">Don't have an account? <b>Register</b></p>
+        </div>
+
+        <div id="register-form" class="hide">
+            <h2>Register</h2>
+            <div class="auth-form">
+                <input type="text" id="reg-user" placeholder="Username">
+                <input type="password" id="reg-pass" placeholder="Password">
+                <input type="password" id="reg-confirm" placeholder="Confirm Password">
+                <button onclick="handleRegister()">Register</button>
+            </div>
+            <p class="toggle-link" onclick="toggleAuth()">Already have an account? <b>Login</b></p>
+
+            </table>
+        </div>
+
+        <script src="auth.js"></script>
+</body>
+
+</html>
