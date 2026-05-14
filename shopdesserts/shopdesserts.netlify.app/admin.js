@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderAllOrders();
     renderAdminProducts();
 
+
     const productForm = document.getElementById('product-form');
     if (productForm) {
         productForm.addEventListener('submit', (e) => {
